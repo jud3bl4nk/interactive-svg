@@ -1,31 +1,37 @@
-#left-ear, #right-ear{
+#left-ear, #right-ear {
   transform-origin: center;
   transition: .5s linear;
 }
 
 .bear:hover #left-ear,
-.bear:hover #right-ear{
+.bear:hover #right-ear {
   transform: translateY(-10px);
 }
 
-#left-eye, #right-eye{
-animation: chuckey 2s linear infinite;
+#left-eye, #right-eye {
+  animation: chuckey 2s linear infinite;
 }
 
 @keyframes chuckey {
+
   0% {
-    transform: translatex(0);
+    transform: translateX(0);
   }
+
   25% {
     transform: translateX(8px);
   }
+
   50% {
     transform: rotateX(0);
   }
+
   75% {
-    transform: rotateX(-8px);
+    transform: translateX(-8px);
   }
+
   100% {
     transform: rotateX(0);
   }
+
 }
